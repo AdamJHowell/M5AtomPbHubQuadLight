@@ -1,6 +1,5 @@
 /*
- * Description: Use Pbhub to read the analog input value of the slave device,
- * or drive multiple sets of RGB LEDs.
+ * Description: Use PbHUB to read the analog input values.
 */
 
 #include <M5Atom.h>
@@ -9,11 +8,13 @@
 PortHub porthub;
 // Addresses of the six ports: HUB1_ADDR, HUB2_ADDR, HUB3_ADDR, HUB4_ADDR, HUB5_ADDR, HUB6_ADDR
 
+
 void setup() 
 {
 	M5.begin( true, false, true );
 	porthub.begin();
 }
+
 
 void loop() 
 {
